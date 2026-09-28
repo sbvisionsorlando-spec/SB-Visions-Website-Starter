@@ -188,6 +188,11 @@
     input, textarea { width: 100%; border: 1px solid #cbd8da; border-radius: 12px; padding: 14px 15px; background: #fbfdfd; color: var(--ink); }
     textarea { min-height: 130px; resize: vertical; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .service-fieldset { min-width: 0; margin: 0; padding: 14px 16px 16px; border: 1px solid #cbd8da; border-radius: 12px; }
+    .service-fieldset legend { padding: 0 6px; color: #344852; font-size: 0.9rem; font-weight: 700; }
+    .service-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .service-options .service-option { display: flex; align-items: flex-start; gap: 9px; min-width: 0; color: #344852; font-weight: 600; }
+    .service-option input { flex: 0 0 18px; width: 18px; height: 18px; margin: 2px 0 0; padding: 0; border-radius: 4px; accent-color: var(--teal-dark); }
     .form-status { min-height: 24px; margin: 0; color: var(--teal-dark); font-weight: 700; }
 
     footer { padding: 34px 0; background: var(--ink); color: #aac0c7; }
@@ -235,5 +240,6 @@
       .mission-image img { min-height: 440px; }
       .cta-card { padding: 36px 22px; gap: 36px; }
       .form-row { grid-template-columns: 1fr; }
+      .service-options { grid-template-columns: 1fr; }
       .footer-inner { flex-direction: column; }
     }

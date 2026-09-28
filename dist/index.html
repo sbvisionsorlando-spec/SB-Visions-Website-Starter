@@ -228,7 +228,21 @@
             <label>Organization<input name="organization" autocomplete="organization"></label>
           </div>
           <label>Email<input name="email" type="email" autocomplete="email" required></label>
-          <label>Event details<textarea name="details" placeholder="Event name, dates, location, and what you want the content to accomplish" required></textarea></label>
+          <label>Event name<input name="event_name" autocomplete="off"></label>
+          <label>Event dates<input name="event_dates" placeholder="Dates or date range" autocomplete="off"></label>
+          <label>Event location<input name="event_location" autocomplete="off"></label>
+          <fieldset class="service-fieldset">
+            <legend>Services needed</legend>
+            <div class="service-options">
+              <label class="service-option"><input type="checkbox" name="services" value="Photography">Photography</label>
+              <label class="service-option"><input type="checkbox" name="services" value="Video">Video</label>
+              <label class="service-option"><input type="checkbox" name="services" value="Photography and Video">Photography and Video</label>
+              <label class="service-option"><input type="checkbox" name="services" value="Leader Interviews">Leader Interviews</label>
+              <label class="service-option"><input type="checkbox" name="services" value="Interview Studio">Interview Studio</label>
+              <label class="service-option"><input type="checkbox" name="services" value="Not Sure">Not Sure</label>
+            </div>
+          </fieldset>
+          <label>Event goals and important details<textarea name="details" placeholder="What do you want the content to accomplish?" required></textarea></label>
           <button class="button" type="submit">Plan Your Event</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
