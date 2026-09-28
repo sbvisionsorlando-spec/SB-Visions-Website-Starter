@@ -170,6 +170,16 @@
     .value span { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--mist); color: var(--teal-dark); font-weight: 900; }
     .value p { margin: 3px 0 0; color: var(--muted); }
 
+    .faq { background: var(--cloud); }
+    .faq .section-head { margin-bottom: 42px; }
+    .faq-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 18px; }
+    .faq-item { min-width: 0; padding: 22px 24px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); }
+    .faq-item summary { position: relative; padding-right: 30px; color: var(--navy); font-size: 1.05rem; font-weight: 800; cursor: pointer; list-style: none; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; position: absolute; top: -2px; right: 0; color: var(--teal-dark); font-size: 1.35rem; line-height: 1; }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-item p { margin: 14px 0 0; color: var(--muted); }
+
     .cta { padding: 110px 0; background: var(--mist); }
     .cta-card { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 70px; padding: 64px; border-radius: 28px; background: var(--white); box-shadow: var(--shadow); }
     .cta-card h2 { font-size: clamp(2.2rem, 4vw, 4rem); }
@@ -195,6 +205,7 @@
       .package-card:last-child { grid-column: 1 / -1; }
       .process-grid { grid-template-columns: 1fr 1fr; }
       .work-grid, .mission-grid, .cta-card { grid-template-columns: 1fr; }
+      .faq-list { grid-template-columns: 1fr; }
       .mission-grid { gap: 54px; }
       .mission-image { order: 2; }
     }
